@@ -7,7 +7,7 @@
 // ==========================================================================
 
 // 1. Declare a variable whose value is an empty Array. Use any method you choose to add at least 4 items to it.
-	test
+	test test 2
 //console.log("Question 1");
 //console.log(yourAnswer);
 
