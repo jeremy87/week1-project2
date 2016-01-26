@@ -7,27 +7,62 @@
 // ==========================================================================
 
 // 1. Declare a variable whose value is an empty Array. Use any method you choose to add at least 4 items to it.
-	test test 2
+	
+	var animals = []
+
+	animals.push('dog', 'cat', 'goat', 'chicken')
+	console.log(animals)
+
+	["dog", "cat", "goat", "chicken"]
+
 //console.log("Question 1");
 //console.log(yourAnswer);
 
 
 // 2. Add an additional item to the beginning of your Array.
 
+	animals.unshift('horse')
+	console.log(animals)
+
+	["horse", "dog", "cat", "goat", "chicken"]
+
 // 3. Remove the second and third items.
+
+	animals.splice(1,2);
+	console.log(animals)
+
+	["horse", "goat", "chicken"]	
 
 // 4. Add two new items after the second item.
 
+	animals.splice(2,0,'cow','sheep')
+	console.log(animals)
+
+	["horse", "goat", "cow", "sheep", "chicken"]
+
 // 5. Write 'The current length of the array is....' using the .length method
+
+	console.log('The current length of the array is ' + animals.length)
 
 // Use the following Array for questions 6-11:
 var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
 
 // 6. Change 'mouse' to 'keyboard'
 
+	things[2] = 'keyboard'
+	console.log(things)
+
+	["mug", "book", "keyboard", "plant", "sunglasses"]
+
 // 7. Combine all of the elements of the array into a string.
 
+	console.log('Items: ' + things + '.')
+
+	Items: mug,book,keyboard,plant,sunglasses.
+
 // 8. Declare a variable called lastItem whose using .pop() Add two new items to lastItem, on at the beginning and one at the end.
+
+	
 
 // 9. Create a new Array called itemLast. The items should be the same as lastItem, only in reverse order.
 
@@ -36,19 +71,43 @@ var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
 // 11. Remove all items from itemLast (No need to write to the document. Just console.log to test your results)
 
 // 12. Using the Arrays below, create a single Array called numberPets whose value is [12, 5, 9, 27, 'fish', 'dog']
+
 var firstArray = [12, 5, 9, 27];
 var secondArray = ['fish', 'dog'];
 
+	var numberPets = firstArray.concat(secondArray);
+	console.log(numberPets)
+
+	[12, 5, 9, 27, "fish", "dog"]
+
 // Use the following array for questions 13-16:
+
 var people = ['Bill', 'Ted', 'Emily', 'Andrea', 'Doug'];
 
 // 13. Add two new people after 'Doug'
 
+	people.splice(5,0,'Jeremy', 'Alyssa')
+	console.log(people)
+
+	["Bill", "Ted", "Emily", "Andrea", "Doug", "Jeremy", "Alyssa"]
+
 // 14. Remove everybody except 'Andrea' and 'Ted'
+
+
 
 // 15. Add a new person to the beginning of the Array
 
+	people.unshift('Mark')
+	console.log(people)
+
+	["Mark", "Ted", "Andrea"]
+
 // 16. Arrange the items alphabetically. Store this Array as orderedPeople
+
+	var orderedPeople = people.sort();
+	console.log(orderedPeople)
+
+	["Andrea", "Mark", "Ted"]
 
 // 17. Create an array of arrays with the following three arrays:
 var array1 = ["Fido", "Spot", "Rex", "Sparky"]
@@ -61,6 +120,9 @@ var array4 = [
                 ["Bulldog", "Lab", "Dalmation", "Beagle"],
                 ["White", "Black", "Spotted", "Tri-color"]
               ]
+
+// Answer
+
 
 // 18. Remove "Sparky" and "White" from the above array of arrays.
 
