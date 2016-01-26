@@ -15,10 +15,6 @@
 
 	["dog", "cat", "goat", "chicken"]
 
-//console.log("Question 1");
-//console.log(yourAnswer);
-
-
 // 2. Add an additional item to the beginning of your Array.
 
 	animals.unshift('horse')
@@ -56,19 +52,32 @@ var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
 
 // 7. Combine all of the elements of the array into a string.
 
-	console.log('Items: ' + things + '.')
+	things.toString()
 
-	Items: mug,book,keyboard,plant,sunglasses.
+	"mug,book,mouse,plant,sunglasses"
 
-// 8. Declare a variable called lastItem whose using .pop() Add two new items to lastItem, on at the beginning and one at the end.
+// 8.* Declare a variable called lastItem whose using .pop() Add two new items to lastItem, on at the beginning and one at the end.
 
-	
+	var lastItem = new Array(things.pop();)
 
-// 9. Create a new Array called itemLast. The items should be the same as lastItem, only in reverse order.
+	lastItem.push('coffee mug');
+	lastItem.unshift('chair');
+	console.log(lastItem)	
 
-// 10. Remove the first item of itemLast.
+// 9.* Create a new Array called itemLast. The items should be the same as lastItem, only in reverse order.
 
-// 11. Remove all items from itemLast (No need to write to the document. Just console.log to test your results)
+	var itemLast = lastItem.reverse();
+	console.log(itemLast)
+
+// 10.* Remove the first item of itemLast.
+
+	itemLast.shift();
+	console.log(itemLast)
+
+// 11.* Remove all items from itemLast (No need to write to the document. Just console.log to test your results)
+
+	var itemLast = [];
+	console.log(itemLast)
 
 // 12. Using the Arrays below, create a single Array called numberPets whose value is [12, 5, 9, 27, 'fish', 'dog']
 
@@ -86,14 +95,18 @@ var people = ['Bill', 'Ted', 'Emily', 'Andrea', 'Doug'];
 
 // 13. Add two new people after 'Doug'
 
-	people.splice(5,0,'Jeremy', 'Alyssa')
+	people.push('Jeremy', 'Alyssa')
 	console.log(people)
 
 	["Bill", "Ted", "Emily", "Andrea", "Doug", "Jeremy", "Alyssa"]
 
-// 14. Remove everybody except 'Andrea' and 'Ted'
+// 14.* Remove everybody except 'Andrea' and 'Ted'
 
+	people.shift();
+	people.splice(1,1);
+	people.splice(4,3);
 
+	console.log(people)
 
 // 15. Add a new person to the beginning of the Array
 
@@ -121,10 +134,17 @@ var array4 = [
                 ["White", "Black", "Spotted", "Tri-color"]
               ]
 
-// Answer
+// Answer *
+	
+	var bigArray = [(array1, array2, array3)];
+	console.log(bigArray)
 
+// 18.* Remove "Sparky" and "White" from the above array of arrays.
 
-// 18. Remove "Sparky" and "White" from the above array of arrays.
+	bigArray[0].pop();
+	bigArray[2].shift();
+
+	console.log(bigArray)
 
 // BONUS 1: Try to arrange the following items from smallest to largest:
 var sortingNumbers = [2, 5, 98, 55, 77, 300]
@@ -135,3 +155,4 @@ var array1 = [2, 'dog', 34, 'Bill', 'plant', 'mug', 17];
 
 //Goal
 var array2 = ['plant', 17, 2, 'Bill', 'dog'];
+
