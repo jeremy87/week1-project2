@@ -64,17 +64,17 @@ var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
 	lastItem.unshift('chair');
 	console.log(lastItem)	
 
-// 9.* Create a new Array called itemLast. The items should be the same as lastItem, only in reverse order.
+// 9. Create a new Array called itemLast. The items should be the same as lastItem, only in reverse order.
 
 	var itemLast = lastItem.reverse();
 	console.log(itemLast)
 
-// 10.* Remove the first item of itemLast.
+// 10. Remove the first item of itemLast.
 
 	itemLast.shift();
 	console.log(itemLast)
 
-// 11.* Remove all items from itemLast (No need to write to the document. Just console.log to test your results)
+// 11. Remove all items from itemLast (No need to write to the document. Just console.log to test your results)
 
 	var itemLast = [];
 	console.log(itemLast)
@@ -100,10 +100,10 @@ var people = ['Bill', 'Ted', 'Emily', 'Andrea', 'Doug'];
 
 	["Bill", "Ted", "Emily", "Andrea", "Doug", "Jeremy", "Alyssa"]
 
-// 14.* Remove everybody except 'Andrea' and 'Ted'
+// 14. Remove everybody except 'Andrea' and 'Ted'
 
 	people.shift();
-	people.splice(1,1);
+	people.splice(1,2);
 	people.splice(4,3);
 
 	console.log(people)
@@ -134,12 +134,12 @@ var array4 = [
                 ["White", "Black", "Spotted", "Tri-color"]
               ]
 
-// Answer *
+// Answer
 	
 	var bigArray = [(array1, array2, array3)];
 	console.log(bigArray)
 
-// 18.* Remove "Sparky" and "White" from the above array of arrays.
+// 18. Remove "Sparky" and "White" from the above array of arrays.
 
 	bigArray[0].pop();
 	bigArray[2].shift();
